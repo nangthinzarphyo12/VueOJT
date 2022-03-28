@@ -1,0 +1,582 @@
+html,
+body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    margin: 0;
+}
+
+label {
+    margin: 0;
+}
+
+.form-content,
+.card {
+    margin-top: 50px;
+    padding: 50px 120px;
+}
+
+.main-title>h2,
+.card-header {
+    font-size: 20px;
+}
+
+.card-header {
+    text-align: center;
+    background-color: unset;
+    border-bottom: unset;
+}
+
+.form,
+.card {
+    background: #E0EEEE;
+    border-radius: 20px;
+    margin: 50px 30px 20px 30px;
+}
+
+.login-box {
+    background: #E0EEEE;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+input {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    color: #808080;
+    align-self: center;
+}
+
+.btn-group {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+}
+
+.sub-btn {
+    background: #4682B4;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    margin: 0 5px;
+    width: 80px;
+    text-align: center;
+}
+
+.create-btn .sub-btn {
+    padding: 14px 13px;
+}
+
+.change-pwd-btn .sub-btn {
+    padding: 12px 23px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: center;
+    max-width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+tr {
+    height: 70px;
+}
+
+th {
+    background: #B6D0E2;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-btn {
+    text-align: right;
+    margin: 30px 0 20px 0;
+}
+
+.create-btn .sub-btn {
+    background: #4682B4;
+}
+
+.edit-btn {
+    background: #cccc00;
+}
+
+.delete-btn {
+    background: #800008;
+}
+
+.content {
+    margin: 20px 0 10px 0;
+}
+
+.chk {
+    display: flex;
+}
+
+.detail-page .content>input,
+.detail-page .content>textarea {
+    background: #E8E8E8;
+}
+
+a:hover,
+button:hover,
+.create-btn .sub-btn:hover {
+    background: grey;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+    margin: 0 15px;
+}
+
+.userList-btn,
+.login-btn,
+.logout-btn {
+    margin: 30px 10px;
+}
+
+.login-gp {
+    justify-content: right;
+}
+
+.login-alert {
+    padding: 10px 120px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.login-alert-message {
+    color: red;
+}
+
+.alert-danger {
+    color: #f33632;
+    background-color: unset;
+    border-color: unset;
+}
+
+.alert {
+    padding: unset;
+    border: unset;
+}
+
+.required-sign {
+    color: red;
+    margin: 0 5px;
+}
+
+.nav-group {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    background-color: #B6D0E2;
+}
+
+.navrow {
+    text-align: right;
+    margin: 0 60px 0 0;
+}
+
+.navrow a {
+    font-size: 16px;
+    color: white;
+    padding: 22px 16px;
+    text-decoration: none;
+}
+
+.nav-group a:hover {
+    background: none;
+}
+
+.navrow .nav-item-hov:hover {
+    background: grey;
+}
+
+.nav-group .to__home {
+    padding: 5px 100px;
+    margin: 0;
+}
+
+.dropbtn {
+    background: transparent;
+    color: white;
+    padding: 19px 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E0EEEE;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: grey;
+    padding: 12px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+.awesome-icon {
+    margin: 5px;
+}
+
+.blog-logo {
+    width: 90px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cancelbtn,
+.deletebtn {
+    width: 50%;
+}
+
+.cancelbtn {
+    background-color: #ccc;
+    color: black;
+}
+
+.deletebtn {
+    background-color: #800008;
+}
+
+.modal {
+    margin: 309px 25%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 25%;
+    background-color: #fff;
+    padding-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(53 43 190 / 48%);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    border: unset;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #636b6f;
+}
+
+.close:hover,
+.close:focus {
+    color: #800008;
+    cursor: pointer;
+}
+
+.clearfix {
+    margin-top: 40px;
+}
+
+.user-table {
+    width: 100%;
+}
+
+.active {
+    background: grey;
+}
+
+.search-form {
+    margin: 30px 0;
+}
+
+.search-info {
+    display: flex;
+    align-items: center;
+}
+
+.no-data-alert {
+    margin: 10px 0 0 0;
+    color: #4682B4;
+    font-weight: bold;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: #4682B4;
+    border-color: #4682B4;
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #4682B4;
+    border-radius: 10px;
+}
+
+.pagination>li>span,
+.pagination>li>a {
+    margin: 3px;
+}
+
+.pagination-group {
+    text-align: right;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post-head {
+    background: #4682B4;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0;
+}
+
+.post-head>h4,
+.post-head>p {
+    color: #fff;
+}
+
+.post-body {
+    padding: 10px;
+}
+
+.description-text {
+    text-indent: 30px;
+    white-space: pre-line;
+}
+
+.comment {
+    text-indent: unset;
+}
+
+p,
+h4 {
+    margin: unset;
+}
+
+.post-btn-group {
+    margin-top: 20px;
+}
+
+.description-area {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #808080;
+    padding: 10px;
+}
+
+.main-title {
+    display: flex;
+}
+
+.successMessage {
+    margin: 0 auto;
+    color: #007f00;
+    font-size: 18px;
+}
+
+p,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+span {
+    word-break: break-all;
+}
+
+.alert-404 {
+    color: #800008;
+}
+
+.box-error {
+    margin-top: 250px;
+}
+
+.a-hov:hover {
+    background-color: unset;
+    color: #0275d8;
+}
+
+.reset-link-btn {
+    width: unset;
+}
+
+.comment-box {
+    margin: 30px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.comment-author {
+    color: #4682B4;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.comment-body {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.comment-text {
+    padding: 10px 15px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+.comment-content {
+    display: flex;
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+
+    .form-content,
+    .card {
+        padding: 50px;
+    }
+
+    .modal {
+        height: 15%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: unset;
+    }
+
+    .modal {
+        height: 15%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .form-content,
+    .card {
+        margin-top: 50px;
+        padding: 50px 10px;
+    }
+
+    .container {
+        max-width: unset;
+    }
+
+    .form {
+        margin: unset;
+    }
+
+    .nav-group .to__home {
+        padding: 5px 15px;
+    }
+
+    .navrow {
+        margin: 0 15px 0 0;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    .sub-btn {
+        width: unset;
+    }
+}
